@@ -2,6 +2,7 @@ For this assignment I recieved mockup code for a website that needed some Javasc
 
 I admit, upon looking over the assignment, everything seemed a bit daunting, especially because the module itself didn't all soak in while I was making my way through it. However, I feel like despite that, I was able to dig my heels in and use online resources enough to learn what I needed in order to sctructure everything, and ultimately come up with the product that I have now. I learned a lot throughout this assignment, and I hope to continue adding to my knowledge base.
 
-![alt text](https://github.com/mkelsch2000/Mkelsch-passgen/blob/Develop/Password-Generator.PNG?raw=true)
+![Screenshot #1](https://github.com/mkelsch2000/Mkelsch-passgen/blob/main/Develop/Password-Generator.PNG)
+![Screenshot #2](https://github.com/mkelsch2000/Mkelsch-passgen/blob/main/Develop/Char-Length.PNG)
 
 link to website: https://mkelsch2000.github.io/Mkelsch-passgen/
