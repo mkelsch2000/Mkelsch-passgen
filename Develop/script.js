@@ -64,7 +64,7 @@ var passwordLength = function() {
     passwordLength();
   }
 
-  return lengthInput++;
+  return lengthInput;
 };
 
 
