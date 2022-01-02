@@ -13,9 +13,10 @@ function writePassword() {
 
 }
 
-var generatePassword = function() {
-
-  
+var generatePassword = function() {  
+debugger;
+  var length = passwordLength();
+  console.log(length);
 
   if (capitalLetters()) {
     var capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -23,7 +24,6 @@ var generatePassword = function() {
   else {
     capital = "";
   }
-  console.log(capital);
 
   if (specialCharacters()) {
     var special = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
@@ -31,7 +31,6 @@ var generatePassword = function() {
   else {
     special = "";
   }
-  console.log(special);
 
   if (includeNumbers()) {
     var num = "0123456789";
@@ -39,20 +38,17 @@ var generatePassword = function() {
   else {
     num = "";
   }
-  console.log(num);
 
+  var givenPassword = "";
   var combinedChars = smallcaps + capital + special + num;
-  console.log(combinedChars);
+  var combinedCharsLength = combinedChars.length;
+  for ( var i = 0; i < length; i++ ) {
+    givenPassword += combinedChars.charAt(Math.floor(Math.random() * combinedCharsLength));
+  }
 
-  return combinedChars;
-  
+  return givenPassword;
   
 };
-
-
-// Password Length
-var length = passwordLength();
-  console.log(length);
 
 // Small caps letters
 var smallcaps = "abcdefghijklmnopqrstuvwxyz";
@@ -61,19 +57,14 @@ var smallcaps = "abcdefghijklmnopqrstuvwxyz";
 
 // Get password length
 var passwordLength = function() {
-
   var lengthInput = window.prompt("How long do you want your password to be? Please choose a number between 8 and 128.");
 
   if (lengthInput < 8 || lengthInput > 128) {
     window.alert("Incorrect value. Please choose a number between 8 and 128.");
     passwordLength();
   }
-  else if(lengthInput === null) {
-    window.alert("No number given. Please enter a number between 8 and 128.");
-    passwordLength();
-  }
 
-  return lengthInput;
+  return lengthInput++;
 };
 
 
